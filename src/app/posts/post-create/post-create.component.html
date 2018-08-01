@@ -1,6 +1,13 @@
-<h2>Create a post</h2>
-<label>Set a message : </label>
-<textarea rows="6" [(ngModel)]="inputValue"></textarea>
-<hr />
-<button (click)="onAddPost()">Submit post</button>
+<mat-card>
+  <mat-form-field>
+    <textarea matInput rows="6" [(ngModel)]="inputValue"></textarea>
+  </mat-form-field>
+  <button
+    mat-raised-button
+    color="accent"
+    (click)="onAddPost()"
+  >
+    Submit post
+  </button>
+</mat-card>
 <p>{{newPost}}</p>
