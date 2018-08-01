@@ -1,3 +1,6 @@
 <h2>Create a post</h2>
-<textarea rows="6"></textarea>
+<label>Set a message : </label>
+<textarea rows="6" [(ngModel)]="inputValue"></textarea>
+<hr />
 <button (click)="onAddPost()">Submit post</button>
+<p>{{newPost}}</p>
